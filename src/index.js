@@ -1,16 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from "react"
+import ReactDOM from "react-dom"
 
-import "./styles.css";
+import Form from "./Form"
+import Card from "./Card"
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+import "./styles.scss"
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <div className="title-container">
+          <h1>CARDS</h1>
+          <h2>Users cards generator !</h2>
+        </div>
+
+        <Form />
+
+        <Card />
+      </div>
+    )
+  }
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<App />, document.getElementById("root"))

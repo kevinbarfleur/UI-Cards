@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.title-container {
+  margin: 5% auto;
+
+  h1 {
+    font-family: "Major Mono Display", monospace;
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  input {
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 3px;
+  }
+}
+
+.card {
+  width: 360px;
+  height: 480px;
+}
